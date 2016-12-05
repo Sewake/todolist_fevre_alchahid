@@ -14,5 +14,5 @@ public interface TaskDao extends JpaRepository<Task, Long>{
 
 	List<Task> findAllByUserIdAndCategoryId(long idUser, long idCategory);
 
-	Collection findAllByEndingDateBetweenInterval(Date start, Date end);
+	Collection findAllByEndingDateBetween(Date start, Date end);
 }

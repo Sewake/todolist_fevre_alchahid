@@ -15,8 +15,8 @@ public class TaskDaoTest extends AbstractDaoTest {
 
 	@Autowired
 	private TaskDao taskDao;
-	taskDao.setBeginningDate(start);
-	taskDao.setEndingDate(end);
+//	taskDao.setBeginningDate(start);
+//	taskDao.setEndingDate(end);
 	private final static Task task = new Task();
 	private static final Date start = new Date(2017,01,01);
 	private static final Date end = new Date(2017,01,30);
@@ -41,11 +41,11 @@ public class TaskDaoTest extends AbstractDaoTest {
 	
 	@Test
 	public void testListTasksEndingDateBetweenInterval(){
-		assertTrue(CollectionUtils.isNotEmpty(taskDao.findAllByEndingDateBetweenInterval(start, end)));
+		assertTrue(CollectionUtils.isNotEmpty(taskDao.findAllByEndingDateBetween(start, end)));
 	}
 	
 //	@Test
-//	public void testListTasksIsOver() {
+//	public void testListTasksEndingDateBetweenIntervalAndOver() {
 //		
 //	}
 	
