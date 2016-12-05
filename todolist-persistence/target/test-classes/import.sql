@@ -21,6 +21,6 @@ INSERT INTO category(name) VALUES('testCategoryDB');
 -- ID_TASK = 2L
 INSERT INTO task(label, id_user, id_category) VALUES('testListByUserAndCategoryDB', 1, 4);
 
-INSERT INTO task(label, begining_date, ending_date) VALUES('task1', '2017,01,12', '2017,01,22');
+INSERT INTO task(label, beginningDate, endingDate) VALUES('task1', '2017,01,12', '2017,01,22');
 
-INSERT INTO task(label, begining_date, ending_date) VALUES('task2', '2017,01,12', '2017,01,25');
+INSERT INTO task(label, beginningDate, endingDate) VALUES('task2', '2017,01,12', '2017,01,25');
